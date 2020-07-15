@@ -1,0 +1,136 @@
+
+
+@media (max-width: 768px) {
+		.block {					
+			flex-direction: column;
+			align-items: center;				
+		}
+		.block {
+		 margin: rem(15px) 0;
+		}
+		.services__block__left {
+			margin-bottom: rem(60px);
+		}
+}
+
+.services-container {
+	padding: rem(30px) rem(30px);
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	width: rem(904px);		
+
+	@include e(common) {
+		width: rem(422px);	
+		justify-content: center;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;		
+		background: $fontFamily;
+		box-shadow: rem(3px) rem(4px) rem(12px) rgba(99, 99, 99, 0.25);	
+		transition:all 0.3s ease 0.1s;
+		padding: rem(35px) rem(35px);
+		&:hover {	
+			background: $blue;
+			box-shadow: rem(3px) rem(4px) rem(12px) rgba(99, 99, 99, 0.25);										
+		}
+		
+	}
+	@include e(title) {		
+		font: rem(24px) $fontFamily;	
+		font-weight: 700;		
+		line-height: rem(28px);		
+		text-transform: uppercase;
+		color: $blue;		
+		transition:all 0.3s ease 0.1s;
+}
+
+	@include e(subtitle) {		
+		font-family: $fontFamily;				
+		font-size: rem(18px);
+		line-height: rem(21px);
+		align-items: center;		
+		color: #3C3C3B;
+		transition:all 0.3s ease 0.1s;
+	}
+
+	@include e(description) {			
+		font-family: $fontFamily;		
+		font-size: rem(13px);
+		line-height: rem(15px);		
+		text-align: center;
+		text-transform: uppercase;
+		color: #B6B6B6;
+		padding-top: rem(25px);
+		transition:all 0.3s ease 0.1s;		
+	}
+
+	@include e(btn) {				
+		display: flex;
+		width: rem(200px);
+		height: rem(48px);	
+		margin: rem(41px) rem(75px) rem(14px);
+		background-color: $blue;
+		align-items: center;
+		justify-content: center;
+		transition:all 0.3s ease 0.1s;
+	}
+
+	@include e(btn-info) {		
+		font-family: $fontFamily;		
+		font-weight: 700;
+		font-size: rem(17px);
+		line-height: rem(20px);	
+		text-transform: uppercase;
+		color: $white;		
+		transition:all 0.3s ease 0.1s;
+	}
+
+	@include e(title-sign) {
+		padding: rem(7px) rem(0px) rem(15px) rem(0px);
+		font-family: $fontFamily;		
+		font-weight: 700;
+		font-size: rem(16px);
+		line-height: rem(19px);
+		align-items: center;		
+		text-transform: uppercase;
+		color: #B6B6B6;
+		transition:all 0.3s ease 0.1s;
+	}
+}
+
+.block__common:hover .block__title,
+.block__common:hover .block__subtitle,
+.block__common:hover .block__description {
+				color: $white;								
+			}			
+
+.block__common:hover .block__btn {
+				background-color: #B0CCEC;					
+			}
+.block__common:hover .block__btn-info {
+				color: $blue;					
+			}
+
+.services__block__left .block__subtitle {
+			padding: rem(41px) rem(70px) 0px;			
+			}
+
+.services__block__right .block__subtitle {
+			padding: 0px rem(45px) 0px;			
+			}			
+
+
+
+
+	

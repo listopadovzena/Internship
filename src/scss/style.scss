@@ -1,0 +1,78 @@
+@import "base/index";
+@import "/vendor/index";
+@import "header";
+@import "services";
+
+html {
+  font-size: $fontFamily;
+}
+a{
+  text-decoration: none;
+}
+body {
+  font: rem(14px) $fontFamily;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  color: $black;
+  position: relative;
+  word-break: break-word;
+  padding-right: 0!important;
+}
+
+.footer_bottom{
+  flex: 1;
+}
+input {
+  outline:none;
+  border-radius: 0;
+}
+
+.container {
+  width: rem(1230px);
+  padding-right: 1px;
+  padding-left: 1px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 100px) and (max-width: 1100px){
+  .container {
+    max-width: 100%;
+    padding-left: rem(15px);
+    padding-right: rem(15px);
+  }
+}
+
+@media (min-width: 1101px) {
+  .container {
+    max-width: rem(1230px);
+
+  }
+}
+img {
+  vertical-align: center;
+}
+a:active, a:focus { outline: none; }
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
+}
+.content{
+  display: flex;
+  flex: 1;
+}
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(10px, 1fr));
+}
